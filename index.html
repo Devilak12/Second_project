@@ -15,30 +15,73 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lekton:400,700,400italic" rel="stylesheet" type="text/css">
+    <!-- typed js -->
+    <script src="js/typed.js"></script>
+    <script src="js/typed.min.js"></script>
+    <!-- scripts -->
+    <script src="myscript.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     
 </head>
 <body>
+
   <div class="container hd">
     <div class="logo">
       <img src="img/logo.png" alt="">
     </div>
+    <!-- side navbar -->
     <div class="nav">
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <p>
-                <a class="btn" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  Link with href
+                <a class="btn" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  Home
                 </a>
+                <span class="collapse " id="collapseExample1">
+                    <a role="button" class=" font-weight-lighter" href="#">Devil may cry</a>
+                </span>
+                <a class="btn" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    About
+                </a>
+                <a class="btn" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      PORTFOLIO
+                </a>
+                <span class="collapse " id="collapseExample3">
+                    <a role="button" class=" font-weight-lighter" href="#">
+                     devil
+                    </a>
+                </span>
+                <a class="btn" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">          
+                  BLOG
+                 </a>
+                 <a class="btn" data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    CONTACT
+                  </a>
               </p>
-              <div class="collapse" id="collapseExample">
-               <a role="button" href="#">Devil may cry</a>
-              </div>
+             
           </div>
           
       </div>
-    <span onclick="openNav()" class=" float-lg-right" id="btn"><i class="fas fa-bars"></i></span>
+    <div onclick="openNav()" id="btn">
+      <div id="up1">
+
+      </div>
+      <div id="mid1">
+
+      </div>
+      <div id="bottom1">
+
+      </div>
+    </div>
   </div>
   <br>
+
+
   <!-- First Slider -->
   <div class="container clearfix" id="fdimg"> 
     <div class="fst_slider">
@@ -47,17 +90,25 @@
               <div class="carousel-item active" data-interval="5000">
                 <img src="img/slider/image_1.jpg" class="d-block w-100" alt="...">
               </div>
-              <div class="carousel-item" data-interval="2000">
+              <div class="carousel-item" data-interval="1000">
                 <img src="img/slider/image_2.jpg" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
                 <img src="img/slider/image_3.jpg" class="d-block w-100" alt="...">
               </div>
-          </div>
+           </div>
+        </div>
     </div>
+    <div class="type">
+      PURE <span>Elegance</span>
+      <br>
+      <div class="type1">
+          devil may cry
+      </div>
+    </div>
+  </div>
 
-  </div>
-  </div>
+<!-- second div and slider -->
   <div class=" container" id="second_d">
     <section class="t1">
       <span id="t1_head"><h2 style="font-weight: bold;"><u>HIS</u>TORY OF AGENCY</h2></span>
@@ -72,19 +123,21 @@
     <section class="sec_slid">
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item">
+          <div class="carousel-item" data-interval="1000">
               <img src="img/about_img.jpg"  class="d-block w-100" alt="...">
           </div>
-          <div class="carousel-item  active">
+          <div class="carousel-item  active" data-interval="1000">
             <img src="img/about_img2.jpg" class="d-block w-100" alt="...">
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-interval="1000">
             <img src="img/about_img3.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
       </div>
     </section>
   </div>
+
+
   <div class="container">
     <div class="wcu">
        <h2><strong><u>WHY</u> CHOOSE US?</strong></h2>
@@ -140,9 +193,24 @@
           <br>
           Laborious to obtain some advantage from it
        </div>
+       <br>
+       <div id="ham_d">
+              <div id="ham" onclick="motion()">
+                  <div id="u1">
+
+                  </div>
+                  <div id="m1">
+
+                  </div>
+                  <div id="b1">
+
+                  </div>
+              </div>
+       </div>
+       <br>       
       <div class="ou_content">
           <div class="ou_content_ele">
-              <img src="img/home-portfolio/img_1.jpg" alt="">
+              <img id="ou_img1"src="img/home-portfolio/img_1.jpg" alt="">
           </div>
 
           <div class="ou_content_ele">
@@ -222,12 +290,6 @@
     </div>
   </footer>
 
-      <script src="js/bootstrap.bundle.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/bootstrap.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="myscript.js"></script>
-      <!-- <script src="js/jquery-3.4.1.js"></script> -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     
 </body>
 </html>

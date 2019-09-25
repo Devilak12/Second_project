@@ -4,7 +4,10 @@
     float: left;
 }
 .hd{
-    padding: 3%;
+    padding-bottom: 3%;
+    padding-top: 2%;
+    margin-top: 3%;
+    position: relative;
 }
 /* The side navigation menu */
 .sidenav {
@@ -55,12 +58,44 @@
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+  .btn {
+    display: block;
+    text-align: left;
+  }
   
   #btn {
-      font-size: 2em;
+    
+      height: 100%;
+      width: 3%;
+      padding-left: 0.5% ;
+      padding-right: 0.5% ;
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding-top: 2%;
+      padding-bottom: 1.5%;
   }
   #btn:hover {
-      word-spacing: 3px;
+    padding-top: 1.8%;
+    padding-bottom: 0.9%;
+    cursor: pointer;
+  }
+  #up1{
+    width: 100%;
+    height: 20%;
+    border-top: 2px solid #000;
+  }
+  #mid1 {
+    margin-top: 2%;
+    width: 100%;
+    height: 20%;
+    border-top: 2px solid #000;
+  }
+  #bottom1 {
+    margin-top: 2%;
+    width: 100%;
+    height: 20%;
+    border-top: 2px solid #000;
   }
   #fst_slide_img {
       animation: myanimation;
@@ -133,8 +168,13 @@
     grid-gap:1.5em;
     margin-bottom: 5%;
   }
-  .ou_content_el {
+  .ou_content_ele {
     overflow: hidden;
+    cursor: url('img/cursor.png'),auto;
+    
+  }
+  #ou_img1:hover {
+    background:linear-gradient(rgba(123,289,199,0.45),rgba(123,289,199,0.45));
   }
   .newsletter {
     margin-top: 5%;
@@ -194,4 +234,60 @@ footer {
 }
 .ft_middle strong{
   cursor: pointer;
+}
+#fdimg {
+
+}
+.type {
+  position:absolute;
+  padding: 0;
+  transform: translate(10%,-150%);
+  font-size: 400%;
+  width: 100%;
+  word-spacing: 3%;
+  -webkit-font-smoothing: antialiased;
+    font-family: 'Ubuntu', sans-serif;
+}
+.type span {
+  /* display: block; */
+  background-color: #7beec7;
+  padding:.5% 1%;
+  word-spacing: 4%;
+}
+#type1 {
+  font-size: 30%;
+  width: 100%;
+}
+#ham_d{
+  width: 100%;
+
+}
+#ham {
+  height: 100%;
+  width: 4%;
+  padding-left: 0.5% ;
+  padding-right: 0.5% ;
+  left:0;
+  top: 0;
+  padding-top: 2%;
+  padding-bottom: 1.5%;
+  background-color:#7beec7;
+}
+
+#u1{
+width: 100%;
+height: 20%;
+border-top: 2px solid #000;
+margin-bottom: 30%;
+}
+#m1 {
+margin-bottom: 30%;
+width: 100%;
+height: 20%;
+border-top: 2px solid #000;
+}
+#b1 {
+width: 100%;
+height: 20%;
+border-top: 2px solid #000;
 }
