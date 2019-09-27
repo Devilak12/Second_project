@@ -18,8 +18,7 @@
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lekton:400,700,400italic" rel="stylesheet" type="text/css">
     <!-- typed js -->
-    <script src="js/typed.js"></script>
-    <script src="js/typed.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <!-- scripts -->
     <script src="myscript.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
@@ -38,24 +37,33 @@
     <div class="nav">
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div id="search_btn"><input type="text" id="search_btn_txt" placeholder="type your search"><span onclick="search()"><i class="fas fa-search"></i></span></div>
             <p>
                 <a class="btn" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
                   Home
                 </a>
-                <span class="collapse " id="collapseExample1">
-                    <a role="button" class=" font-weight-lighter" href="#">Devil may cry</a>
-                </span>
+                <div class="collapse " id="collapseExample1">
+                    <ul>
+                      <li>DEFAULT</li>
+                      <li>ARCHITECHER</li>
+                      <li>SLIDER FULL WIDTH</li>
+                    </ul>
+                </div>
                 <a class="btn" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
                     About
                 </a>
+                <div></div>
                 <a class="btn" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
                       PORTFOLIO
                 </a>
-                <span class="collapse " id="collapseExample3">
-                    <a role="button" class=" font-weight-lighter" href="#">
-                     devil
-                    </a>
-                </span>
+                <div class="collapse " id="collapseExample3">
+                    <ul>
+                      <li>PORTFOLIO COLUMN 2</li>
+                      <li>PORTFOLIO COLUMN 3</li>
+                      <li>PORTFOLIO COLUMN 4</li>
+                      <li>PORTFOLIO COLUMN 5</li>                      
+                    </ul>
+                  </div>
                 <a class="btn" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">          
                   BLOG
                  </a>
@@ -63,6 +71,15 @@
                     CONTACT
                   </a>
               </p>
+              <div id="sidebar_footer">
+                <i class="fab fa-facebook-f ico1"></i>
+                <i class="fab fa-twitter ico1"></i>
+                <i class="fab fa-pinterest ico1"></i>
+                <i class="fab fa-wordpress ico1"></i>
+                <i class="fab fa-old-republic ico1"></i> <br>
+                T: 003 124 115 <br>
+                E: info@mail.com
+              </div>
              
           </div>
           
@@ -100,10 +117,10 @@
         </div>
     </div>
     <div class="type">
-      PURE <span>Elegance</span>
+      PURE <span id="ty1">Elegance</span>
       <br>
-      <div class="type1">
-          devil may cry
+      <div>
+         <span id="typed2"></span>
       </div>
     </div>
   </div>
@@ -144,6 +161,7 @@
        <br>
         Except to obtain some advantage from it
     </div>
+    <br>
     <div class="wcu_content">
       <div class="wcu_content_ele">
          <u> <i class="fas fa-pencil-ruler"></i></u>
@@ -159,7 +177,7 @@
 
       </div>
       <div class="wcu_content_ele">
-          <u> <i class="fas fa-pencil-ruler"></i></u>
+          <u> <i class="fas fa-clipboard"></i></i></u>
           <br>
           <br>
           <strong>PLAN OF WORK</strong>
@@ -206,6 +224,14 @@
 
                   </div>
               </div>
+              <div id="ham_index">
+                <a href=""> 
+                <span>  All </span>
+                <span>Branding</span> 
+                <span>Web Design  </span>
+                <span>Graphic Design</span>
+                </a>
+              </div>
        </div>
        <br>       
       <div class="ou_content">
@@ -214,7 +240,9 @@
           </div>
 
           <div class="ou_content_ele">
+            <div class="ou_ele2">
               <img src="img/home-portfolio/img_2.jpg" alt="">
+              </div>
           </div>
 
           <div class="ou_content_ele">
@@ -289,6 +317,18 @@
         W:www.website.com</p>
     </div>
   </footer>
+  <script>
+    var typed = new Typed("#typed2", {
+    strings:["AWESOME THEME","MODERN COMBINATION","CREATIVE SOLUTION"],
+    typeSpeed: 40,
+    backSpeed: 40,
+    backDelay: 500,
+    startDelay: 1000,
+    cursorChar: '|',
+    loop: true,
+
+  });
+  </script>
 
      
 </body>

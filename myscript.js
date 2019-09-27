@@ -9,14 +9,37 @@ function openNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
   var count=0;
-  var typed5 = new Typed('.type1', {
-    strings: ['Creative Solution', 'new 2', 'new3'],
+  var lt=0;
+
+  var typed2 = new Typed('#typed2', {
+    strings: ['Some <i>strings</i> with', 'Some <strong>HTML</strong>', 'Chars &times; &copy;'],
     typeSpeed: 0,
     backSpeed: 0,
-    cursorChar: '|',
-    shuffle: true,
-    smartBackspace: false,
+    fadeOut: true,
     loop: true
   });
-
+  function search()
+  {
+    if(count==0)
+    {
+      document.getElementById('search_btn_txt').style.width="80%";
+      count++;
+    }
+    else
+    {
+      document.getElementById('search_btn_txt').style.width="0";
+      count=0;
+    }
+  }
+function motion(){
+      if(lt==0)
+      {
+        document.getElementById('ham_index').style.display="flex";
+        lt=1;
+      }
+      else{
+        document.getElementById('ham_index').style.display="none";
+        lt=0;
+      }
+}
 
