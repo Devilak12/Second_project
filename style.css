@@ -58,6 +58,7 @@ body{
     text-decoration: none;
     font-size:2em;
     color: #818181;
+    cursor: pointer;
    
   }
   .fa-search:hover{
@@ -88,6 +89,7 @@ body{
   }
   .ico1:hover {
     color: #f1f1f1;
+    cursor: pointer;
   }
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -226,6 +228,10 @@ body{
   .ou_content_ele img:hover {
     transform: scale(1.1);
     }
+    .ou_ele2{
+      position: relative;
+    }
+
   .newsletter {
     margin-top: 5%;
     margin-bottom: 5%;
@@ -313,7 +319,7 @@ footer {
   text-align: center;
   font-family: 'Lekton', sans-serif;
 }
-#ham_d{
+/* #ham_d{
   width: 100%;
   display: flex;
 
@@ -329,11 +335,10 @@ footer {
   padding-top: 2%;
   padding-bottom: 1.5%;
   background-color:#7beec7;
-}
+} */
 #ham_index {
   font-size: 200%;
   padding-left: 2%;
-  padding-top: 1%;
   display: none;
   width: 100%;
 }
@@ -349,23 +354,7 @@ footer {
         cursor: pointer;
 }
 
-#u1{
-width: 100%;
-height: 20%;
-border-top: 2px solid #000;
-margin-bottom: 30%;
-}
-#m1 {
-margin-bottom: 30%;
-width: 100%;
-height: 20%;
-border-top: 2px solid #000;
-}
-#b1 {
-width: 100%;
-height: 20%;
-border-top: 2px solid #000;
-}
+
 #collapseExample1 {
   margin-left: 30%;
   color: #818181;
@@ -378,3 +367,99 @@ border-top: 2px solid #000;
   text-align: left;
 
 }
+#ham_d {
+  display: flex;
+  margin-bottom: 2%;
+}
+#ham {
+  background-color: #7beec7;
+  
+}
+
+.animated-icon3 {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin: 0px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  }
+  
+.animated-icon3 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+  }
+  #ham_ico_f1 {
+    top: 30px;
+  }
+  .animated-icon3 span {
+    background:black;
+    }
+  
+
+.animated-icon3 span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+  }
+  
+  .animated-icon3 span:nth-child(2) {
+  top: 10px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+  }
+  
+  .animated-icon3 span:nth-child(3) {
+  top: 20px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+  }
+  
+  .animated-icon3.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 0px;
+  left: 8px;
+  }
+  
+  .animated-icon3.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+  }
+  
+  .animated-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 21px;
+  left: 8px;
+  }
