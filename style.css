@@ -5,27 +5,27 @@ body{
 .logo {
     float: left;
 }
+
 .hd{
     padding-bottom: 3%;
     padding-top: 2%;
     margin-top: 3%;
     position: relative;
 }
-/* The side navigation menu */
+
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 2; /* Stay on top */
-    top: 0; /* Stay at the top */
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 2; 
+    top: 0; 
     right: 0;
     background:url(img/nav_bg.jpg);
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
   }
   
-  /* The navigation menu links */
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -35,12 +35,10 @@ body{
     transition: 0.3s;
   }
   
-  /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
     color: #f1f1f1;
   }
   
-  /* Position and style the close button (top right corner) */
   .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -92,13 +90,11 @@ body{
     cursor: pointer;
   }
   
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   #main {
     transition: margin-left .5s;
     padding: 20px;
   }
   
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
@@ -145,9 +141,10 @@ body{
   }
   #fst_slide_img {
       animation: myanimation;
-      animation-duration: 20s;
+      animation-duration: 15s;
       animation-direction: alternate;
       animation-iteration-count: infinite;
+      animation-delay: 0;
 
 
   }
@@ -357,19 +354,22 @@ footer {
 .ft_middle strong{
   cursor: pointer;
 }
+#fdimg {
+  position: relative;
+}
 
 .type {
   position:absolute;
   padding: 0;
-  transform: translate(10%,-150%);
-  font-size: 400%;
+  top: 40%;
+  left: 10%;
+  font-size: 300%;
   width: 100%;
   word-spacing: 3%;
   -webkit-font-smoothing: antialiased;
     font-family: 'Ubuntu', sans-serif;
 }
 #ty1 {
-  /* display: block; */
   background-color: #7beec7;
   padding:.5% 1%;
   word-spacing: 4%;
@@ -395,9 +395,6 @@ footer {
 #ham_index a{
   text-decoration: none;
   color: black;
-}
-#ham_index span {
-  /* padding-right: 2%; */
 }
 #ham_index span:hover {
         color: #7beec7;
